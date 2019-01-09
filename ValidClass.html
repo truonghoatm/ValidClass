@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="TheClassName" placeholder="Enter classname">
+<input type="button" id="Check" value="Check" onclick="isClassName();">
+<script>
+    function isClassName() {
+        var name = document.getElementById("TheClassName").value;
+        regexp = /^[A|C|P]+([0-9]{4})+[G|H|I|K|L|M]$/;
+        if(regexp.test(name)){
+            alert("The classname is valid");
+        }else alert("The classname is invalid");
+    }
+    isClassName();
+</script>
+</body>
+</html>
